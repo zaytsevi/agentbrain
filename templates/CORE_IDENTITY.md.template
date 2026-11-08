@@ -1,0 +1,12 @@
+# CORE IDENTITY & USER CONTEXT
+> Persistent memory of user preferences, coding habits, personal background, and style.
+
+## 1. Developer Profile
+* **Name:** [Your Name]
+* **Working Style:** Fast, modular, test-driven. Prefers working code over explanations.
+* **Code Style:** Strict typing, clean modular functions, minimal third-party dependencies.
+
+## 2. Workspaces & Environments
+* **Primary Machine:** [e.g. macOS / Windows / Linux]
+* **Default Shell:** [e.g. bash / zsh / powershell]
+* **Default Package Manager:** [e.g. pnpm / uv / poetry]

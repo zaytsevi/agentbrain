@@ -1,0 +1,7 @@
+# PROJECT LEDGER & ARTIFACT INDEX
+> Definitive registry of project repositories, Google Docs, cloud deployments, and URLs.
+
+| Project | Repo / Location | Production URL | Master Doc / Spec | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| Core Service | `github.com/org/core` | `https://api.example.com` | `SPEC-001.md` | Active |
+| Web Frontend | `github.com/org/web` | `https://example.com` | `SPEC-002.md` | Active |

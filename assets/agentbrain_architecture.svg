@@ -1,0 +1,295 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" style="background-color: #0b0f19; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrowCyan" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrowEmerald" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#10b981" />
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrowAmber" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#fbbf24" />
+    </marker>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+
+  <!-- Subtle Circuit / Tech Grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" />
+    </pattern>
+    <rect width="1600" height="900" fill="url(#grid)" />
+  </g>
+
+  <!-- ================= HEADER SECTION ================= -->
+  <g transform="translate(80, 50)">
+    <text x="0" y="32" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="3">SYSTEM ARCHITECTURE WHITEPAPER</text>
+    <text x="0" y="72" fill="#ffffff" font-size="34" font-weight="800" letter-spacing="-0.5">AGENTBRAIN: AUTONOMOUS STATE &amp; PERSISTENCE</text>
+    <text x="0" y="100" fill="#94a3b8" font-size="16" font-weight="400">Zero-Drift Cross-Session Continuity, Dual-Layer Memory, Causal Supersession &amp; Asynchronous Dreaming</text>
+  </g>
+
+  <!-- Header Accents -->
+  <line x1="80" y1="170" x2="1520" y2="170" stroke="#334155" stroke-width="1" />
+  <line x1="80" y1="170" x2="350" y2="170" stroke="url(#cyanGrad)" stroke-width="2" filter="url(#glowCyan)" />
+
+  <!-- ================= 4 ARCHITECTURE QUADRANTS ================= -->
+
+  <!-- QUADRANT 1: TIER-0 GROUND TRUTH (Top-Left) -->
+  <g transform="translate(80, 205)" filter="url(#shadow)">
+    <!-- Box Frame -->
+    <rect width="440" height="295" rx="12" fill="url(#cardBg)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4" />
+    <rect width="440" height="42" rx="12" fill="#0369a1" fill-opacity="0.25" />
+    <!-- Header -->
+    <text x="20" y="26" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.5">TIER-0: COLD BOOT &amp; GROUND TRUTH</text>
+    <text x="350" y="26" fill="#7dd3fc" font-size="11" font-weight="600">&lt; 1,500 TOKENS</text>
+    
+    <!-- Items -->
+    <g transform="translate(20, 58)">
+      <rect width="400" height="48" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="22" fill="#f8fafc" font-size="13" font-weight="600">BOOT_MANIFEST.md</text>
+      <text x="14" y="38" fill="#94a3b8" font-size="11">High-density profile, active projects, locked topology</text>
+    </g>
+
+    <g transform="translate(20, 114)">
+      <rect width="400" height="48" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="22" fill="#f8fafc" font-size="13" font-weight="600">CORE_IDENTITY.md</text>
+      <text x="14" y="38" fill="#94a3b8" font-size="11">Cumulative user preferences, contacts, family context</text>
+    </g>
+
+    <g transform="translate(20, 170)">
+      <rect width="400" height="48" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="22" fill="#f8fafc" font-size="13" font-weight="600">ACTION_ITEMS.md &amp; PROJECT_LEDGER.md</text>
+      <text x="14" y="38" fill="#94a3b8" font-size="11">P0-P3 operational backlog and verified doc IDs/artifacts</text>
+    </g>
+
+    <g transform="translate(20, 226)">
+      <rect width="400" height="48" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="22" fill="#38bdf8" font-size="13" font-weight="600">Deterministic Cold Boot Contract</text>
+      <text x="14" y="38" fill="#94a3b8" font-size="11">Zero latency, zero dynamic RAG cost at session step 0</text>
+    </g>
+  </g>
+
+  <!-- QUADRANT 2: ACTIVE EXECUTION HARNESS (Top-Right) -->
+  <g transform="translate(560, 205)" filter="url(#shadow)">
+    <!-- Box Frame -->
+    <rect width="520" height="295" rx="12" fill="url(#cardBg)" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.4" />
+    <rect width="520" height="42" rx="12" fill="#4338ca" fill-opacity="0.25" />
+    <!-- Header -->
+    <text x="20" y="26" fill="#a5b4fc" font-size="12" font-weight="700" letter-spacing="1.5">ACTIVE EXECUTION HARNESS</text>
+    <text x="400" y="26" fill="#c7d2fe" font-size="11" font-weight="600">ANTIGRAVITY ENGINE</text>
+
+    <!-- Sub-boxes -->
+    <g transform="translate(20, 58)">
+      <rect width="480" height="66" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="24" fill="#f8fafc" font-size="13" font-weight="600">Agentic Orchestrator &amp; Tool Router</text>
+      <text x="16" y="44" fill="#94a3b8" font-size="11">Executes tasks, enforces zero-emoji policy, audits verifiable evidence</text>
+      <text x="16" y="58" fill="#64748b" font-size="10">Self-correction: pivots approach on two successive tool failures</text>
+    </g>
+
+    <g transform="translate(20, 132)">
+      <rect width="480" height="66" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="24" fill="#f8fafc" font-size="13" font-weight="600">Local MCP Tool Mesh (Model Context Protocol)</text>
+      <text x="16" y="44" fill="#94a3b8" font-size="11">Gmail, Yahoo Mail, RCS Messages, WhatsApp, UniFi, Chrome DevTools</text>
+      <text x="16" y="58" fill="#64748b" font-size="10">Codebase Memory (AST / Cypher graph) &amp; native shell execution</text>
+    </g>
+
+    <g transform="translate(20, 206)">
+      <rect width="480" height="68" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="24" fill="#f8fafc" font-size="13" font-weight="600">Ephemeral Swarm Protocol</text>
+      <text x="16" y="44" fill="#94a3b8" font-size="11">Dispatches parallel subagents communicating through centralized SQLite</text>
+      <text x="16" y="58" fill="#64748b" font-size="10">Eliminates O(N^2) peer chatter; compressed claims; sub-28 min lifecycle</text>
+    </g>
+  </g>
+
+  <!-- QUADRANT 3: DUAL-LAYER PERSISTENT MEMORY (Bottom-Left) -->
+  <g transform="translate(80, 545)" filter="url(#shadow)">
+    <!-- Box Frame -->
+    <rect width="520" height="305" rx="12" fill="url(#cardBg)" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
+    <rect width="520" height="42" rx="12" fill="#065f46" fill-opacity="0.25" />
+    <!-- Header -->
+    <text x="20" y="26" fill="#34d399" font-size="12" font-weight="700" letter-spacing="1.5">DUAL-LAYER MEMORY &amp; SUPERSESSION ENGINE</text>
+    <text x="410" y="26" fill="#a7f3d0" font-size="11" font-weight="600">SQLITE WAL + FTS5</text>
+
+    <!-- Sub-boxes -->
+    <g transform="translate(20, 58)">
+      <rect width="480" height="52" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#f8fafc" font-size="13" font-weight="600">Append-Only Event Log (events.jsonl)</text>
+      <text x="16" y="40" fill="#94a3b8" font-size="11">Immutable event stream pre-scrubbed for API keys/tokens before writes</text>
+    </g>
+
+    <g transform="translate(20, 118)">
+      <rect width="480" height="52" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#f8fafc" font-size="13" font-weight="600">Materialized Supersession Graph (claims_current)</text>
+      <text x="16" y="40" fill="#94a3b8" font-size="11">New decisions supersede old event IDs; prevents conflicting memory recall</text>
+    </g>
+
+    <g transform="translate(20, 178)">
+      <rect width="480" height="52" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#f8fafc" font-size="13" font-weight="600">Negative Knowledge Buffer (anti_patterns)</text>
+      <text x="16" y="40" fill="#94a3b8" font-size="11">Records failed actions, physical traps, and root-causes. Queried before build</text>
+    </g>
+
+    <g transform="translate(20, 238)">
+      <rect width="480" height="52" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#f8fafc" font-size="13" font-weight="600">Procedural Graph DAG (procedural_nodes &amp; edges)</text>
+      <text x="16" y="40" fill="#94a3b8" font-size="11">Verified step-by-step pipeline execution with automated failure recovery</text>
+    </g>
+  </g>
+
+  <!-- QUADRANT 4: ASYNCHRONOUS CONTINUOUS SYNC & DREAMING (Bottom-Right) -->
+  <g transform="translate(640, 545)" filter="url(#shadow)">
+    <!-- Box Frame -->
+    <rect width="440" height="305" rx="12" fill="url(#cardBg)" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.4" />
+    <rect width="440" height="42" rx="12" fill="#78350f" fill-opacity="0.25" />
+    <!-- Header -->
+    <text x="20" y="26" fill="#fbbf24" font-size="12" font-weight="700" letter-spacing="1.5">ASYNCHRONOUS DAEMONS &amp; DREAMING</text>
+    <text x="315" y="26" fill="#fde68a" font-size="11" font-weight="600">BACKGROUND LOOPS</text>
+
+    <!-- Sub-boxes -->
+    <g transform="translate(20, 58)">
+      <rect width="400" height="70" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#f8fafc" font-size="13" font-weight="600">Continuous Inbound Sync Engine</text>
+      <text x="14" y="44" fill="#94a3b8" font-size="11">Cron daemon polling Gmail, Yahoo, Messages, Drive</text>
+      <text x="14" y="60" fill="#64748b" font-size="10">Delta cursor tracking; dual-writes to DB and ledgers</text>
+    </g>
+
+    <g transform="translate(20, 136)">
+      <rect width="400" height="76" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#f8fafc" font-size="13" font-weight="600">Nightly "Dreaming" Distillation</text>
+      <text x="14" y="44" fill="#94a3b8" font-size="11">Parses daily conversation transcript.jsonl logs</text>
+      <text x="14" y="58" fill="#94a3b8" font-size="11">Synthesizes user corrections, gotchas &amp; milestones</text>
+      <text x="14" y="71" fill="#64748b" font-size="10">Self-improving memory indexed while user sleeps</text>
+    </g>
+
+    <g transform="translate(20, 220)">
+      <rect width="400" height="70" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#f8fafc" font-size="13" font-weight="600">Auto-Purge &amp; Workspace Hygiene</text>
+      <text x="14" y="44" fill="#94a3b8" font-size="11">Automated routines archive background conversations</text>
+      <text x="14" y="60" fill="#64748b" font-size="10">Prevents cluttering active developer session list</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 5: EXTERNAL SURFACES & INPUTS (Rightmost Column) -->
+  <g transform="translate(1120, 205)" filter="url(#shadow)">
+    <!-- Box Frame -->
+    <rect width="400" height="645" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+    <rect width="400" height="42" rx="12" fill="#1e293b" fill-opacity="0.5" />
+    <!-- Header -->
+    <text x="20" y="26" fill="#cbd5e1" font-size="12" font-weight="700" letter-spacing="1.5">INTEGRATION ECOSYSTEM</text>
+    <text x="280" y="26" fill="#94a3b8" font-size="11" font-weight="600">INPUTS &amp; ACTIONS</text>
+
+    <!-- Items -->
+    <g transform="translate(20, 58)">
+      <rect width="360" height="76" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#38bdf8" font-size="13" font-weight="600">Enterprise Messaging Mesh</text>
+      <text x="14" y="44" fill="#e2e8f0" font-size="12">Slack Webhooks &amp; ChatOps integrations</text>
+      <text x="14" y="62" fill="#94a3b8" font-size="11">Bidirectional bot listeners &amp; alerts</text>
+    </g>
+
+    <g transform="translate(20, 144)">
+      <rect width="360" height="76" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#a855f7" font-size="13" font-weight="600">Email &amp; Calendar Infrastructure</text>
+      <text x="14" y="44" fill="#e2e8f0" font-size="12">Gmail / Outlook OAuth 2.0 (read / draft / filters)</text>
+      <text x="14" y="62" fill="#94a3b8" font-size="11">Google Calendar meeting event synchronization</text>
+    </g>
+
+    <g transform="translate(20, 230)">
+      <rect width="360" height="76" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#10b981" font-size="13" font-weight="600">Cloud Infrastructure &amp; Automation</text>
+      <text x="14" y="44" fill="#e2e8f0" font-size="12">Docker containers, Kubernetes clusters &amp; VPCs</text>
+      <text x="14" y="62" fill="#94a3b8" font-size="11">Chrome DevTools CDP + Playwright runners</text>
+    </g>
+
+    <g transform="translate(20, 316)">
+      <rect width="360" height="76" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#f59e0b" font-size="13" font-weight="600">Data &amp; Analytics Pipelines</text>
+      <text x="14" y="44" fill="#e2e8f0" font-size="12">DuckDB &amp; ClickHouse analytical engines</text>
+      <text x="14" y="62" fill="#94a3b8" font-size="11">Kafka streaming &amp; background task queues</text>
+    </g>
+
+    <g transform="translate(20, 402)">
+      <rect width="360" height="110" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="24" fill="#ec4899" font-size="13" font-weight="600">Application Repositories &amp; Services</text>
+      <text x="14" y="44" fill="#e2e8f0" font-size="12">Full-stack web services (Next.js, FastAPI)</text>
+      <text x="14" y="62" fill="#e2e8f0" font-size="12">Microservices mesh &amp; API gateways</text>
+      <text x="14" y="80" fill="#e2e8f0" font-size="12">Database migrations &amp; schema evolution</text>
+      <text x="14" y="98" fill="#94a3b8" font-size="11">CI/CD pipelines &amp; GitHub Actions runners</text>
+    </g>
+
+    <g transform="translate(20, 522)">
+      <rect width="360" height="106" rx="8" fill="#0284c7" fill-opacity="0.1" stroke="#0284c7" stroke-width="1" />
+      <text x="14" y="26" fill="#38bdf8" font-size="12" font-weight="700">CORE ARCHITECTURAL INVARIANT</text>
+      <text x="14" y="48" fill="#f8fafc" font-size="11" font-weight="600">"Never assume or hallucinate execution success."</text>
+      <text x="14" y="68" fill="#94a3b8" font-size="11">Audit every claim against verified tool evidence</text>
+      <text x="14" y="86" fill="#94a3b8" font-size="11">(exit codes, test runs, file contents read back).</text>
+    </g>
+  </g>
+
+  <!-- ================= CONNECTING DATAFLOW PATHS ================= -->
+  <!-- 1. Tier-0 Boot to Harness -->
+  <path d="M 520 280 L 560 280" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrowCyan)" />
+
+  <!-- 2. Harness to Memory Engine -->
+  <path d="M 620 500 L 620 520 L 340 520 L 340 545" fill="none" stroke="#818cf8" stroke-width="2" marker-end="url(#arrowPurple)" />
+
+  <!-- 3. Harness to Integration Ecosystem -->
+  <path d="M 1080 320 L 1120 320" fill="none" stroke="#a5b4fc" stroke-width="2" marker-end="url(#arrowPurple)" />
+
+  <!-- 4. Ecosystem to Continuous Sync -->
+  <path d="M 1320 850 L 1320 870 L 860 870 L 860 850" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)" />
+
+  <!-- 5. Continuous Sync to Tier-0 Ledgers -->
+  <path d="M 640 680 L 600 680 L 600 450 L 520 450" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowAmber)" />
+
+  <!-- 6. Nightly Dreaming to Memory Engine -->
+  <path d="M 640 730 L 600 730" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrowEmerald)" />
+
+</svg>

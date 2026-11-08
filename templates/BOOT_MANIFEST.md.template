@@ -1,0 +1,23 @@
+# AGENTBRAIN BOOT MANIFEST
+> High-Density Executive Orientation for AI Agents.
+> Deep records, procedural graphs, and anti-patterns are indexed in `.agentbrain/memory.db`.
+
+## 1. Executive Profile
+* **User:** [Your Name] | [Location / Timezone]
+* **Role / Focus:** [Your Title or Primary Focus Area]
+* **Preferred Contact:** [Email / Phone / Slack]
+* **Communication & Execution:** Highly agentic, concise, verified results. Never hallucinate success without concrete tool verification. Strict zero-emoji policy across all written content, code, documents, and messages.
+
+## 2. Locked Architecture & Decision Ground Truth
+* **Primary Language & Stack:** [e.g. TypeScript / Python / React / FastAPI / PostgreSQL]
+* **Deployment & Cloud:** [e.g. Cloudflare / AWS / Docker / Kubernetes]
+* **Database & State:** [e.g. SQLite WAL mode for local state, Supabase for cloud]
+
+## 3. Active Primary Projects
+1. **[Project Alpha]:** [One-line status and immediate next step].
+2. **[Project Beta]:** [One-line status and immediate next step].
+
+## 4. Querying Extended Brain Context & Procedural Knowledge
+* **Negative Knowledge:** Call `memory_check_anti_patterns(query, domain)` before designing architectures to avoid known traps.
+* **Instant Fact Search:** Call `memory_ask(query)` for any specific fact, contact info, or historical decision.
+* **Master Ledgers:** For deep context, read `ACTION_ITEMS.md`, `PROJECT_LEDGER.md`, `ANTI_PATTERNS.md`, or `CORE_IDENTITY.md`.

@@ -1,0 +1,17 @@
+# ANTI-PATTERNS & NEGATIVE KNOWLEDGE LEDGER
+> Record of rejected architectures, physical constraints, broken dependencies, and root-cause failure modes.
+> Always check before designing code: `memory_check_anti_patterns(query, domain)`.
+
+## Critical Anti-Patterns
+
+### 1. [Domain: Database] Dynamic String Query Concatenation
+* **Context:** Constructing SQL queries inside agent tools.
+* **Flawed Action:** Embedding user parameters directly into SQL query strings.
+* **Failure Mode:** SQL injection vulnerabilities and syntax errors on special characters.
+* **Verified Alternative:** Always use parameterized SQL queries (`?` or `:name`).
+
+### 2. [Domain: State Management] Unbounded Context Stuffing
+* **Context:** Passing long conversation transcripts to every agent prompt.
+* **Flawed Action:** Dumping 30k tokens of previous chat history into system prompt.
+* **Failure Mode:** Rapid context window exhaustion, high cost, and severe hallucination drift.
+* **Verified Alternative:** Tier-0 `<40` line `BOOT_MANIFEST.md` + on-demand SQLite FTS5 queries.
